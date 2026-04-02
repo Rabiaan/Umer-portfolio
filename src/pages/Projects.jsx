@@ -138,15 +138,14 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="group relative bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
               >
-                <div className="bg-gray-50 flex items-center justify-center p-4">
+                <div className="bg-gray-50 h-64 flex items-center justify-center">
                   <iframe 
                     src={project.embedUrl + (project.embedUrl.includes('?') ? '&' : '?') + 'autoplay=1'}
-                    className="border-0"
-                    style={{ height: '300px', width: '100%', maxWidth: '450px', objectFit: 'cover' }}
+                    className="w-full h-full border-0"
+                    style={{ objectFit: 'cover' }}
                     allowFullScreen
                     loading="lazy"
                     title={project.title}
-                    autoPlay
                   />
                 </div>
                 
