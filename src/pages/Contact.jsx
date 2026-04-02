@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, MapPin, Phone, Send, Instagram, Behance } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Instagram } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -69,9 +69,6 @@ export default function Contact() {
               <div className="flex gap-6">
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-4 rounded-2xl text-brand-black hover:bg-brand-blue hover:text-white transition-all duration-500">
                   <Instagram className="w-6 h-6" />
-                </a>
-                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" className="bg-gray-50 p-4 rounded-2xl text-brand-black hover:bg-brand-blue hover:text-white transition-all duration-500">
-                  <Behance className="w-6 h-6" />
                 </a>
               </div>
             </div>

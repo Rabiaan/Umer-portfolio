@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Instagram, Behance } from "lucide-react";
+import { Mail, MapPin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,9 +16,6 @@ export default function Footer() {
           </a>
           <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-blue transition-colors">
             <Instagram className="w-6 h-6" />
-          </a>
-          <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-blue transition-colors">
-            <Behance className="w-6 h-6" />
           </a>
         </div>
 
