@@ -45,10 +45,10 @@ export default function Projects() {
     },
     {
       id: 6,
-      title: "Animation Project 6",
+      title: "Kingtox",
       category: "Animations",
-      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
-      behanceUrl: "#",
+      embedUrl: "https://www.behance.net/embed/project/219046293?ilo0=1",
+      behanceUrl: "https://www.behance.net/gallery/219046293/Kingtox",
     },
   ];
 
