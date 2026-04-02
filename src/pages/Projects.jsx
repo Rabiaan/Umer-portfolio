@@ -71,6 +71,13 @@ export default function Projects() {
       embedUrl: "https://www.behance.net/embed/project/234919057?ilo0=1",
       behanceUrl: "https://www.behance.net/gallery/234919057/Stay-Green",
     },
+    {
+      id: 10,
+      title: "Quice",
+      category: "Animations",
+      embedUrl: "https://www.behance.net/embed/project/160876375?ilo0=1",
+      behanceUrl: "https://www.behance.net/gallery/160876375/Quice",
+    },
   ];
 
   const filteredProjects = filter === "All" ? projects : projects.filter(p => p.category === filter);
