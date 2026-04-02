@@ -10,45 +10,45 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Animation Project 1",
+      title: "Oreo Brand",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
+      behanceUrl: "https://www.behance.net/gallery/245108345/Oreo",
     },
     {
       id: 2,
-      title: "Animation Project 2",
+      title: "TUC Brand",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/242080387?ilo0=1",
+      behanceUrl: "https://www.behance.net/gallery/242080387/TUC",
     },
     {
       id: 3,
       title: "Animation Project 3",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
+      behanceUrl: "#",
     },
     {
       id: 4,
       title: "Animation Project 4",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
+      behanceUrl: "#",
     },
     {
       id: 5,
       title: "Animation Project 5",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
+      behanceUrl: "#",
     },
     {
       id: 6,
       title: "Animation Project 6",
       category: "Animations",
-      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
-      link: "#",
+      embedUrl: "https://www.behance.net/embed/project/245108345?ilo0=1",
+      behanceUrl: "#",
     },
   ];
 
@@ -108,6 +108,7 @@ export default function Projects() {
                     src={project.embedUrl}
                     className="w-full h-full border-0"
                     allowFullScreen
+                    loading="lazy"
                     title={project.title}
                   />
                 </div>
@@ -119,7 +120,7 @@ export default function Projects() {
                       <h3 className="text-2xl font-display font-black text-brand-black uppercase tracking-tighter">{project.title}</h3>
                     </div>
                     <a 
-                      href={project.link} 
+                      href={project.behanceUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-gray-50 p-3 rounded-2xl text-brand-black group-hover:bg-brand-blue group-hover:text-white transition-colors duration-500"
