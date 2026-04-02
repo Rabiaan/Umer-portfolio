@@ -103,10 +103,11 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="group relative bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
               >
-                <div className="aspect-video overflow-hidden bg-gray-50">
+                <div className="h-80 overflow-hidden bg-gray-50">
                   <iframe 
                     src={project.embedUrl}
                     className="w-full h-full border-0"
+                    style={{ height: '320px', width: '404px' }}
                     allowFullScreen
                     loading="lazy"
                     title={project.title}
