@@ -78,6 +78,13 @@ export default function Projects() {
       embedUrl: "https://www.behance.net/embed/project/160876375?ilo0=1",
       behanceUrl: "https://www.behance.net/gallery/160876375/Quice",
     },
+    {
+      id: 11,
+      title: "National Foods",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7445135386613325824?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
   ];
 
   const filteredProjects = filter === "All" ? projects : projects.filter(p => p.category === filter);
@@ -135,7 +142,7 @@ export default function Projects() {
                   <iframe 
                     src={project.embedUrl}
                     className="border-0"
-                    style={{ height: '320px', width: '404px', maxWidth: '100%' }}
+                    style={{ height: '300px', width: '100%', maxWidth: '450px' }}
                     allowFullScreen
                     loading="lazy"
                     title={project.title}
