@@ -125,7 +125,7 @@ export default function Projects() {
         {/* Projects Grid */}
         <motion.div 
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32"
         >
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
