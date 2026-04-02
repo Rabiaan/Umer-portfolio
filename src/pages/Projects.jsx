@@ -38,10 +38,10 @@ export default function Projects() {
     },
     {
       id: 5,
-      title: "Animation Project 5",
+      title: "McDonald's",
       category: "Animations",
       embedUrl: "https://www.behance.net/embed/project/233506297?ilo0=1",
-      behanceUrl: "https://www.behance.net/gallery/233506297",
+      behanceUrl: "https://www.behance.net/gallery/233506297/McDonalds",
     },
     {
       id: 6,
