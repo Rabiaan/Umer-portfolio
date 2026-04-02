@@ -64,6 +64,13 @@ export default function Projects() {
       embedUrl: "https://www.behance.net/embed/project/221028855?ilo0=1",
       behanceUrl: "https://www.behance.net/gallery/221028855/Engro",
     },
+    {
+      id: 9,
+      title: "Stay Green",
+      category: "Animations",
+      embedUrl: "https://www.behance.net/embed/project/234919057?ilo0=1",
+      behanceUrl: "https://www.behance.net/gallery/234919057/Stay-Green",
+    },
   ];
 
   const filteredProjects = filter === "All" ? projects : projects.filter(p => p.category === filter);
