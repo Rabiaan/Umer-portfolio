@@ -224,10 +224,6 @@ export default function Home() {
                   <span className="font-bold">Position :</span>
                   <span className="text-gray-500">Senior 2D Animator</span>
                 </div>
-                <div className="flex justify-between border-b border-gray-50 pb-2">
-                  <span className="font-bold">Location :</span>
-                  <span className="text-gray-500">PIB Colony, Karachi, Pakistan</span>
-                </div>
                 <div className="flex flex-col gap-1 border-b border-gray-50 pb-2">
                   <span className="font-bold">Email :</span>
                   <span className="text-gray-500 break-all">muhammadumershabih@gmail.com</span>
@@ -295,108 +291,6 @@ export default function Home() {
           >
             FEATURED WORK.
           </motion.h3>
-        </div>
-
-        {/* Bento Grid Featured Projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Project 1 - Heartstrings (Large) */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="md:col-span-2 bg-brand-black rounded-[3rem] p-8 overflow-hidden group"
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
-              {/* Main Image */}
-              <div className="lg:col-span-2 relative">
-                <img 
-                  src="/images/heartstrings.png" 
-                  alt="Heartstrings" 
-                  className="w-full h-64 lg:h-full object-cover rounded-[2rem] group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              {/* Project Info */}
-              <div className="space-y-6">
-                <div>
-                  <h4 className="text-2xl font-display font-black text-white uppercase tracking-tighter">Heartstrings</h4>
-                  <p className="text-brand-blue font-bold text-sm">2D Animation</p>
-                </div>
-                <p className="text-gray-400 text-sm">Animated content for various clients.</p>
-                {/* Color Palette */}
-                <div>
-                  <p className="text-[10px] text-gray-500 uppercase tracking-widest mb-2">Color Palette</p>
-                  <div className="flex gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-[#ff6b6b]" title="#ff6b6b"></div>
-                    <div className="w-8 h-8 rounded-lg bg-[#4ecdc4]" title="#4ecdc4"></div>
-                    <div className="w-8 h-8 rounded-lg bg-[#2c3e50]" title="#2c3e50"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Project 2 - Rabiaan */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="bg-white border border-gray-100 rounded-[3rem] p-8 overflow-hidden group"
-          >
-            <div className="space-y-6">
-              <img 
-                src="/images/rabiaan.jpeg" 
-                alt="Rabiaan" 
-                className="w-full h-48 object-cover rounded-[2rem] group-hover:scale-105 transition-transform duration-500"
-              />
-              <div>
-                <h4 className="text-xl font-display font-black text-brand-black uppercase tracking-tighter">Rabiaan</h4>
-                <p className="text-brand-blue font-bold text-sm">2D Animation</p>
-              </div>
-              <p className="text-gray-500 text-sm">Custom animation project.</p>
-              {/* Color Palette */}
-              <div>
-                <p className="text-[10px] text-gray-400 uppercase tracking-widest mb-2">Color Palette</p>
-                <div className="flex gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-purple-600" title="#7b61ff"></div>
-                  <div className="w-6 h-6 rounded-lg bg-pink-500" title="#4a9eff"></div>
-                  <div className="w-6 h-6 rounded-lg bg-gray-900" title="#1f2937"></div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Project 3 - FrameGen */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="bg-white border border-gray-100 rounded-[3rem] p-8 overflow-hidden group"
-          >
-            <div className="space-y-6">
-              <img 
-                src="/images/frame-gen.png" 
-                alt="FrameGen" 
-                className="w-full h-48 object-cover rounded-[2rem] group-hover:scale-105 transition-transform duration-500"
-              />
-              <div>
-                <h4 className="text-xl font-display font-black text-brand-black uppercase tracking-tighter">FrameGen</h4>
-                <p className="text-brand-blue font-bold text-sm">Motion Graphics</p>
-              </div>
-              <p className="text-gray-500 text-sm">React Business Portfolio for marketing agency.</p>
-              {/* Color Palette */}
-              <div>
-                <p className="text-[10px] text-gray-400 uppercase tracking-widest mb-2">Color Palette</p>
-                <div className="flex gap-2">
-                  <div className="w-6 h-6 rounded-lg bg-[#44362a]" title="#44362a"></div>
-                  <div className="w-6 h-6 rounded-lg bg-[#d1b7a0]" title="#d1b7a0"></div>
-                  <div className="w-6 h-6 rounded-lg bg-[#e4e1dc]" title="#e4e1dc"></div>
-                  <div className="w-6 h-6 rounded-lg bg-[#0a0a0a]" title="#0a0a0a"></div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* View All Projects Button */}

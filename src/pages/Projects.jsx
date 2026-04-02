@@ -1,202 +1,55 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ExternalLink, Globe, Code, ShoppingCart } from "lucide-react";
+import { ExternalLink, Play } from "lucide-react";
 
 export default function Projects() {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("Animations");
 
-  const categories = ["All", "WordPress", "HTML/CSS", "React", "Fullstack", "TypeScript"];
+  const categories = ["Animations"];
 
   const projects = [
     {
       id: 1,
-      title: "Fitness Pro",
-      category: "TypeScript",
-      image: "/images/fitness-pro.png",
-      desc: "Full Stack Fitness Management App with workout tracking, user authentication, and progress monitoring.",
-      link: "https://fitness-pro-production.up.railway.app/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 5,
-      title: "FrameGen",
-      category: "React",
-      image: "/images/frame-gen.png",
-      desc: "React Business Portfolio for marketing agency providing web development, marketing, animation, and graphics services.",
-      link: "https://frame-gen.vercel.app/",
-      icon: <Code className="w-5 h-5" />
+      title: "Animation Project 1",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
+      link: "#",
     },
     {
       id: 2,
-      title: "Habibi Bites",
-      category: "Fullstack",
-      image: "/images/habibi-bites.png",
-      desc: "Full Stack Restaurant Management system with online ordering, table reservation, and menu management.",
-      link: "https://habibi-bites.vercel.app/",
-      icon: <Globe className="w-5 h-5" />
+      title: "Animation Project 2",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
+      link: "#",
     },
     {
       id: 3,
-      title: "React E-commerce Platform",
-      category: "React",
-      image: "/images/ecommerce-store.png",
-      desc: "Fullstack E-commerce Store with cart, checkout, and payment integration (In Progress).",
+      title: "Animation Project 3",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
       link: "#",
-      icon: <Code className="w-5 h-5" />
     },
     {
       id: 4,
-      title: "Code Hills",
-      category: "React",
-      image: "/images/codehills.png",
-      desc: "React Business Portfolio showcasing development services and projects.",
-      link: "https://codehills.vercel.app/",
-      icon: <Code className="w-5 h-5" />
+      title: "Animation Project 4",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
+      link: "#",
     },
     {
       id: 5,
-      title: "SamarTex",
-      category: "WordPress",
-      image: "/images/samartex.png",
-      desc: "WooCommerce store with custom theme and seamless checkout flows.",
-      link: "https://samartex.store/",
-      icon: <Globe className="w-5 h-5" />
+      title: "Animation Project 5",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
+      link: "#",
     },
     {
       id: 6,
-      title: "TheNutAffair",
-      category: "WordPress",
-      image: "/images/nutaffair.png",
-      desc: "E-commerce site for food products with online ordering system.",
-      link: "https://nutaffair.ethostechsol.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 7,
-      title: "Delicacy Bakers",
-      category: "WordPress",
-      image: "/images/delicacy.png",
-      desc: "E-commerce site for bakery products with custom styling.",
-      link: "https://delicacy.ethostechsol.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 8,
-      title: "Brand Architect",
-      category: "WordPress",
-      image: "/images/brandarc.png",
-      desc: "Brand and Digital Marketing Agency website with service showcase.",
-      link: "https://brandarchitectsconsulting.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 9,
-      title: "JawShee Candles",
-      category: "WordPress",
-      image: "/images/jawshee.png",
-      desc: "Ecommerce brand website for candles with product catalog.",
-      link: "https://jaw.devsphere.digital/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 10,
-      title: "Asia Glory Co",
-      category: "HTML/CSS",
-      image: "/images/asiaglory.png",
-      desc: "Cold Storage & Warehouse Service website with service showcase and contact forms.",
-      link: "https://asiagloryco.vercel.app/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 11,
-      title: "Safia Sattar Sons",
-      category: "HTML/CSS",
-      image: "/images/safiasattarsons.png",
-      desc: "Business website for trading company with product catalog and company information.",
-      link: "https://safiasattarsons.vercel.app/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 12,
-      title: "Raad Al Arabia",
-      category: "HTML/CSS",
-      image: "/images/raadalarabia.png",
-      desc: "Product portfolio website with product catalog and company information.",
-      link: "https://raadalarabia.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 13,
-      title: "Safi Al Dhabi Trading EST",
-      category: "HTML/CSS",
-      image: "/images/safiaaldhabi.png",
-      desc: "Business website for trading establishment with service showcase.",
-      link: "https://safiaaldhabitrading.vercel.app/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 14,
-      title: "SQI",
-      category: "HTML/CSS",
-      image: "/images/sqi.png",
-      desc: "Portfolio website showcasing products and services.",
-      link: "https://sqi-sage.vercel.app/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 15,
-      title: "IRS",
-      category: "HTML/CSS",
-      image: "/images/irs.png",
-      desc: "E-commerce webstore with product listings and shopping functionality.",
+      title: "Animation Project 6",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:123456789",
       link: "#",
-      icon: <ShoppingCart className="w-5 h-5" />
     },
-    {
-      id: 16,
-      title: "IDTECH Pakistan",
-      category: "Web Development",
-      image: "/images/idtechpakistan.png",
-      desc: "Marketing and Web Development Agency website with service showcase and portfolio.",
-      link: "https://idtechpakistan.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 17,
-      title: "Synthesis Engineering",
-      category: "Web Development",
-      image: "/images/synthesis.png",
-      desc: "Waterproofing and Construction Company website with service showcase and project portfolio.",
-      link: "https://synthesiseng.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 18,
-      title: "Engineer's Office",
-      category: "Web Development",
-      image: "/images/engineer-office.png",
-      desc: "Product Display Website showcasing engineering products and solutions.",
-      link: "https://engineeroffice.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 19,
-      title: "TBHosters",
-      category: "Web Development",
-      image: "/images/tbhosters.png",
-      desc: "Hosting buying website with domain search and hosting plan selection.",
-      link: "https://tbhosters.com/",
-      icon: <Globe className="w-5 h-5" />
-    },
-    {
-      id: 20,
-      title: "HeartStrings",
-      category: "WordPress",
-      image: "/images/heartstrings.png",
-      desc: "Custom Ecommerce Website for custom products with personalized gift options.",
-      link: "https://heartstrings.pk/",
-      icon: <Globe className="w-5 h-5" />
-    }
   ];
 
   const filteredProjects = filter === "All" ? projects : projects.filter(p => p.category === filter);
@@ -251,11 +104,11 @@ export default function Projects() {
                 className="group relative bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
               >
                 <div className="aspect-video overflow-hidden bg-gray-50">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
-                    referrerPolicy="no-referrer"
+                  <iframe 
+                    src={project.embedUrl}
+                    className="w-full h-full border-0"
+                    allowFullScreen
+                    title={project.title}
                   />
                 </div>
                 
@@ -274,9 +127,6 @@ export default function Projects() {
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   </div>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    {project.desc}
-                  </p>
                 </div>
               </motion.div>
             ))}
