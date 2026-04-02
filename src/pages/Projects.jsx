@@ -118,7 +118,7 @@ export default function Projects() {
         {/* Projects Grid */}
         <motion.div 
           layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-32"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32"
         >
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
@@ -131,11 +131,11 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="group relative bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
               >
-                <div className="h-80 overflow-hidden bg-gray-50">
+                <div className="bg-gray-50 flex items-center justify-center p-4">
                   <iframe 
                     src={project.embedUrl}
-                    className="w-full h-full border-0"
-                    style={{ height: '320px', width: '404px' }}
+                    className="border-0"
+                    style={{ height: '320px', width: '404px', maxWidth: '100%' }}
                     allowFullScreen
                     loading="lazy"
                     title={project.title}
