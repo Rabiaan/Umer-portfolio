@@ -272,37 +272,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Preview Section */}
-      <section className="max-w-7xl mx-auto px-6 py-12 md:py-20 border-t border-gray-100 overflow-hidden">
-        <div className="relative flex flex-col items-center mb-12 md:mb-20">
-          <motion.h2 
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 0.1, scale: 1 }}
-            viewport={{ once: true }}
-            className="text-8xl md:text-[15vw] font-brush text-brand-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none whitespace-nowrap"
-          >
-            Projects
-          </motion.h2>
-          <motion.h3 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-4xl md:text-7xl font-display font-black text-brand-black relative z-10 uppercase tracking-tighter"
-          >
-            FEATURED WORK.
-          </motion.h3>
-        </div>
-
-        {/* View All Projects Button */}
-        <div className="mt-12 text-center">
-          <a 
-            href="/projects" 
-            className="inline-block bg-brand-black text-white px-8 py-4 rounded-full font-display font-bold text-sm uppercase tracking-widest hover:bg-brand-blue transition-colors duration-300"
-          >
-            View All Projects
-          </a>
-        </div>
-      </section>
     </div>
   );
 }
