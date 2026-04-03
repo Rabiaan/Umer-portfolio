@@ -44,7 +44,7 @@ export default function Home() {
           style={{ x: imageX, y: imageY }}
         >
           <img 
-            src="/images/rabiaan.jpeg" 
+            src="/images/umer.jpeg" 
             alt="Muhammad Umer" 
             className="w-full max-w-md rounded-[10rem]"
             referrerPolicy="no-referrer"

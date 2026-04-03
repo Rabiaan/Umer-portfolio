@@ -30,7 +30,7 @@ export default function About() {
             className="relative"
           >
             <img 
-              src="/images/rabiaan.jpeg" 
+              src="/images/umer.jpeg" 
               alt="Workspace" 
               className="w-full rounded-[3rem] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"
