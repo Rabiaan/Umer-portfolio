@@ -175,7 +175,7 @@ export default function Projects() {
               >
                 <div className="bg-gray-50 h-64 flex items-center justify-center overflow-hidden">
                   <iframe 
-                    src={project.embedUrl + (project.embedUrl.includes('?') ? '&' : '?') + 'autoplay=1&muted=1'}
+                    src={project.embedUrl + (project.embedUrl.includes('?') ? '&' : '?') + 'autoplay=1&muted=1&loop=1'}
                     className="w-[101%] h-[101%] border-0 -m-[0.5%]"
                     style={{ objectFit: 'cover' }}
                     allowFullScreen
