@@ -85,6 +85,41 @@ export default function Projects() {
       embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7445135386613325824?compact=1",
       behanceUrl: "https://www.linkedin.com/feed/",
     },
+    {
+      id: 12,
+      title: "Tapal Danedar",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7442526485317382144?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
+    {
+      id: 13,
+      title: "Motion Design Work",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7437354859609120768?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
+    {
+      id: 14,
+      title: "Motion Graphics Showcase",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7434374901203099648?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
+    {
+      id: 15,
+      title: "Ferrari Edit",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7421466433840361472?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
+    {
+      id: 16,
+      title: "National Mayo",
+      category: "Animations",
+      embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7418905604255252480?compact=1",
+      behanceUrl: "https://www.linkedin.com/feed/",
+    },
   ];
 
   const filteredProjects = filter === "All" ? projects : projects.filter(p => p.category === filter);
@@ -138,12 +173,14 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="group relative bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
               >
-                <div className="bg-gray-50 h-64 flex items-center justify-center">
+                <div className="bg-gray-50 h-64 flex items-center justify-center overflow-hidden">
                   <iframe 
-                    src={project.embedUrl + (project.embedUrl.includes('?') ? '&' : '?') + 'autoplay=1'}
-                    className="w-full h-full border-0"
+                    src={project.embedUrl + (project.embedUrl.includes('?') ? '&' : '?') + 'autoplay=1&muted=1'}
+                    className="w-[101%] h-[101%] border-0 -m-[0.5%]"
                     style={{ objectFit: 'cover' }}
                     allowFullScreen
+                    allow="autoplay; fullscreen"
+                    scrolling="no"
                     loading="lazy"
                     title={project.title}
                   />
