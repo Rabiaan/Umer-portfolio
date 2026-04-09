@@ -3,6 +3,12 @@ import './Projects.css';
 function DigitalMarketing() {
   const projects = [
     {
+      title: 'Cola Next',
+      description: 'Creative branding project for Cola Next beverage line.',
+      embed: '<iframe src="https://www.behance.net/embed/project/246967861?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>',
+      technologies: ['Behance', 'Branding', 'Design']
+    },
+    {
       title: 'Social Media Campaign',
       description: 'Comprehensive social media strategy that increased engagement by 200% and followers by 150%.',
       technologies: ['Facebook', 'Instagram', 'LinkedIn', 'Analytics']
@@ -33,6 +39,7 @@ function DigitalMarketing() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
+            {project.embed && <div className="project-embed" dangerouslySetInnerHTML={{ __html: project.embed }}></div>}
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <div className="project-tech">
